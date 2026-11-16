@@ -14,7 +14,6 @@
     body, html {
       height: 100%;
       width: 100%;
-      /* Color de fondo idéntico al de la imagen para que se integre sin bordes */
       background-color: #3c4043; 
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
@@ -43,7 +42,7 @@
     }
 
     .btn-inicio {
-      background-color: #d99b26; /* Dorado del logo */
+      background-color: #d99b26;
       color: #ffffff;
       text-decoration: none;
       font-size: 1.2rem;
@@ -65,41 +64,24 @@
       box-shadow: 0 6px 20px rgba(217, 155, 38, 0.4);
     }
 
-    .btn-inicio:active {
-      transform: translateY(0);
-    }
-
     @keyframes aparecer {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Ajustes para celulares */
     @media (max-width: 600px) {
-      .logo-principal {
-        max-width: 90%;
-        margin-bottom: 30px;
-      }
-      .btn-inicio {
-        font-size: 1rem;
-        padding: 12px 35px;
-      }
+      .logo-principal { max-width: 90%; margin-bottom: 30px; }
+      .btn-inicio { font-size: 1rem; padding: 12px 35px; }
     }
   </style>
 </head>
 <body>
 
   <main class="pantalla-inicio">
-    <!-- Asegúrate de guardar la imagen en la misma carpeta con el nombre exacto -->
-    <img src="IMG-20261115-WA0003.jpg" alt="Iglesia Bíblica Naciones a la Luz - Alumbrando tu propósito" class="logo-principal">
+    <!-- Aquí se muestra tu imagen original -->
+    <img src="IMG-20261115-WA0003.jpg" alt="Iglesia Bíblica Naciones a la Luz" class="logo-principal">
     
-    <!-- Cambia "principal.html" por el nombre de la página a la que quieres que dirija -->
+    <!-- Al hacer clic te lleva a la pantalla principal de navegación -->
     <a href="principal.html" class="btn-inicio">Inicio</a>
   </main>
 
